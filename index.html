@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>木头人123</title>
+<meta name="keywords" content="木头人123">
+<meta name="description" content="木头人123">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="renderer" content="webkit">
+<meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mtr123la/CDN@master/css.css">
+</head>
+<body>
+<div class="box">
+	<div class="logo">
+		<img src="https://cdn.jsdelivr.net/gh/mtr123la/CDN@master/waf_logo.gif" width="100">
+	</div>
+	<div class="tip">
+		<small>
+		<div class="ipinfo">
+			<b id="cip"></b><span id="cname"></span>
+		</div>
+		<div>
+			当前网站访问人数较多
+		</div>
+		<div>
+			系统正在自动为您分配最快的服务器
+		</div>
+		<hr>
+		<div>
+			进度条如果不动并非卡顿<b>而是在加载数据</b>
+		</div>
+		</small>
+	</div>
+	<div class="progress">
+		<div id="progress-bar" class="progress-bar progress-bar-success" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+		</div>
+	</div>
+</div>
+<script>
+var url='https://www.mtr123.cn/';
+function progress(p){document.getElementById("progress-bar").style.width=p+"%"}
+setTimeout(function(){progress("5");setTimeout(function(){progress("60");setTimeout(function(){progress("95");window.location.href=url;},600);},800);},300);
+</script>
+</body>
+</html>
